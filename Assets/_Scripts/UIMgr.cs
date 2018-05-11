@@ -82,9 +82,9 @@ public class UIMgr : MonoBehaviour
         }
     }
 
-    public void RefreshUI()
+    public void RefreshUI(SystemLanguage lang)
     {
-        texts = JsonUtility.FromJson<TextsOfUI>(LanguageMgr.GetInstance.GetLanguageData(SystemLanguage.English));
+        texts = JsonUtility.FromJson<TextsOfUI>(LanguageMgr.GetInstance.GetLanguageData(lang));
         InitUI();
     }
 }

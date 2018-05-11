@@ -16,11 +16,12 @@ public class ChoseLanguage : MonoBehaviour
                 if (x == 0)
                 {
                     Debug.Log("简体中文");
+                    UIMgr._instance.RefreshUI(SystemLanguage.Chinese);
                 }
                 else if (x == 1)
                 {
                     Debug.Log("English");
-                    UIMgr._instance.RefreshUI();
+                    UIMgr._instance.RefreshUI(SystemLanguage.English);
                 }
             });
     }
