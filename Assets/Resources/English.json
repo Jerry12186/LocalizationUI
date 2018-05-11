@@ -1,0 +1,18 @@
+﻿{
+	"WeaponPanel":
+	{
+		"WeaponIcon_Text":"QiQuanLiuXiang" ,
+		"WeaponDiscrible_Name":"QiQuanLiuXiang",
+		"WeaponDiscrible_Property_Property01":"Uppest",
+	    "WeaponDiscrible_Property_Property01_Number":"(100%)",
+		"WeaponDiscrible_Property_Property02":"MageDen",
+		"WeaponDiscrible_Property_Property02_Number":"+2333",
+		"WeaponDiscrible_Property_Property03":"Power",
+	    "WeaponDiscrible_Property_Property03_Number":"+69",
+		"WeaponDiscrible_Property_Property04":"ZhiLi",
+		"WeaponDiscrible_Property_Property04_Number":"+69",
+		"WeaponDiscrible_Property_Property05":"Attack Speed",
+		"WeaponDiscrible_Property_Property05_Number":"10%",
+		"WeaponDiscrible_Property_Discrible":"A coder is Dead for this weapon"
+	}
+}
