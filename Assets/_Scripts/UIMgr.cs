@@ -23,7 +23,7 @@ public class UIMgr : MonoBehaviour
         texts = new TextsOfUI();
         texts = JsonUtility.FromJson<TextsOfUI>(LanguageMgr.GetInstance.GetLanguageData());
 
-        
+
 
 
         //for (int i = 0; i < myClass.GetType().GetFields().Length; i++)
@@ -70,8 +70,17 @@ public class UIMgr : MonoBehaviour
             ReflectTools.SetFieldFromOtherClass(myClass, texts.WeaponPanel);
             //Debug.Log((string)ReflectTools.GetFieldFromClass(myClass, "WeaponDiscrible_Property_Discrible"));
             string className = Type.GetType(uiNames[i]).Name;
-            string transName = className + "/" + ReflectTools.GetFieldsFromClass(myClass)[i].Name;
-            
+            for (int j = 0; j < ReflectTools.GetFieldsFromClass(myClass).Length; j++)
+            {
+                string transName = className + "/" + ReflectTools.GetFieldsFromClass(myClass)[j].Name;
+                transform.Find(transName.Replace("_", "/")).GetComponent<Text>().text = (string)ReflectTools.GetFieldFromClass(myClass, ReflectTools.GetFieldsFromClass(myClass)[j].Name);
+            }
+
         }
+    }
+
+    public void RefreshUI()
+    {
+       
     }
 }
